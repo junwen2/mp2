@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { fetchPokemonByName, fetchPokemonList } from '../api';
+import { fetchPokemonList } from '../api';
 import { BrowseContext } from '../BrowseContext';
 import { PokemonListItem } from '../types';
 import styles from './ListView.module.css';
@@ -23,7 +23,6 @@ export default function ListView() {
     setLoading(true);
     fetchPokemonList(300)
       .then(async (res) => {
-        // Attempt to derive IDs from URLs; fallback fetch for first page if needed
         const enriched = res.results.map((p) => {
           const match = p.url.match(/\/pokemon\/(\d+)\//);
           const id = match ? Number(match[1]) : undefined;
@@ -52,9 +51,8 @@ export default function ListView() {
   }, [items, query, sortKey, sortOrder]);
 
   React.useEffect(() => {
-    // update browse context order for detail prev/next
     browse.setOrderedNames(filtered.map((p) => p.name));
-  }, [filtered]);
+  }, [filtered, browse]);
 
   function handleOpen(name: string) {
     navigate(`/pokemon/${name}`);

@@ -70,7 +70,7 @@ export default function GalleryView() {
 
   React.useEffect(() => {
     browse.setOrderedNames(filtered.map((i) => i.name));
-  }, [filtered]);
+  }, [filtered, browse]);
 
   function toggleType(t: string) {
     setSelected((prev) =>
