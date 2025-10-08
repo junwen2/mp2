@@ -1,0 +1,41 @@
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+.home {
+  padding: 16px;
+}
+
+.home h1 {
+  margin: 0 0 16px 0;
+}
+
+.home p {
+  margin: 0 0 16px 0;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+}
+
+.nav a {
+  padding: 8px 16px;
+  text-decoration: none;
+  background: #f0f0f0;
+  border-radius: 4px;
+  color: #333;
+}
+
+.nav a:hover {
+  background: #e0e0e0;
+}
+
+.nav a.active {
+  background: #007bff;
+  color: white;
+}

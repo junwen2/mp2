@@ -1,0 +1,60 @@
+.container {
+  padding: 16px;
+}
+
+.loading {
+  padding: 16px;
+}
+
+.error {
+  padding: 16px;
+  color: red;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.searchInput {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sortButton {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.sortButton:hover {
+  background: #f0f0f0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.listItem:hover {
+  background: #f9f9f9;
+}

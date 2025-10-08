@@ -1,0 +1,76 @@
+.container {
+  padding: 16px;
+}
+
+.loading {
+  padding: 16px;
+}
+
+.error {
+  padding: 16px;
+  color: red;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.filterButton {
+  padding: 6px 10px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  background: #f0f0f0;
+}
+
+.filterButton.selected {
+  border: 2px solid #333;
+  background: #e6f7ff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cardInfo {
+  margin-top: 8px;
+}
+
+.cardTypes {
+  font-size: 12px;
+  opacity: 0.7;
+}
